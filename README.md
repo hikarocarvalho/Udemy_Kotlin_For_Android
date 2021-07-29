@@ -2,7 +2,7 @@
 ## Here I will put all projects with kotlin from the Udemy platform course!
 
 ### Projects:
-<table>
+<table align="center">
   <tr>
     <th>Project Name</th>
     <th>Link</th>
