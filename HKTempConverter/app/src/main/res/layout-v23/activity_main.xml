@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#474242"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:text="Calculadora HK Para Temperaturas"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:ems="20"
+            android:hint="Digite o valor a ser convertido"
+            android:inputType="number"
+            android:textColor="#FFC107"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            android:textSize="34sp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radiocelsius"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Celsius"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/radiofarenheit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="farenheit"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="24sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:backgroundTint="#FFC107"
+            android:foreground="@android:color/holo_orange_light"
+            android:text="@string/calculate"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textCursorDrawable="@color/black"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
