@@ -27,13 +27,13 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun convertTemp(view: View){
-        var temperture: Double = temp.text.toString().toDouble()
+        var temperature: Double = temp.text.toString().toDouble()
         if(celcius.isChecked){
-            temperture = (temperture - 32) / 1.8
-            result.setText("Sua temperatura é de: " + temperture.toString() + "Em celsius")
+            temperature = (temperature - 32) / 1.8
+            result.setText("Sua temperatura é de: " + temperature.toString() + "Em celsius")
         }else if(farenheit.isChecked){
-            temperture = (temperture * 1.8) + 32
-            result.setText("Sua temperatura é de: " + temperture.toString() + "Em Farenheit")
+            temperature = (temperature * 1.8) + 32
+            result.setText("Sua temperatura é de: " + temperature.toString() + "Em Farenheit")
         }
         else{
             result.setText("Seleção ou valor errado! Digite novamente")
